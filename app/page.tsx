@@ -50,9 +50,20 @@ export default function Home() {
           href="https://read.amazon.in/kp/embed?asin=B09QHBZDDZ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_5H184PK7GQJRHM95G7K3"
           color="foreground"
           target="_blank"
-          className="text-red-600"
+          className="text-red-600 mr-8"
         >
           Amp It Up
+        </Link>
+
+        <Link
+          isBlock
+          showAnchorIcon
+          href="https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf?utm_source=blog.quastor.org&utm_medium=referral&utm_campaign=dynamodb-tech-dive"
+          color="foreground"
+          target="_blank"
+          className="text-green-600"
+        >
+          Dynamo
         </Link>
       </section>
     </div>
