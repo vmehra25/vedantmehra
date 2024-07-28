@@ -3,7 +3,7 @@ import { Metadata, Viewport } from "next";
 
 import { siteConfig } from "@/config/site";
 import { NavBar } from "@/components/nav_bar";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@nextui-org/divider";
 
 export const metadata: Metadata = {
   title: {

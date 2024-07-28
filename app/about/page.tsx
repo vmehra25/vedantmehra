@@ -1,7 +1,3 @@
-import { NavBar } from "@/components/nav_bar";
-import { title } from "@/components/primitives";
-import { Divider } from "@nextui-org/divider";
-
 export default function AboutPage() {
   return (
     <div className="bg-gray-50 p-4 h-screen">
@@ -11,12 +7,12 @@ export default function AboutPage() {
         </p>
       </section>
       <section className="mt-16 lg:px-32 md:px-16 px-8">
-        <p>Hi, I'm Vedant Mehra, this is a peek to my interests.</p>
+        <p>Hi, I&apos;m Vedant Mehra, this is a peek to my interests.</p>
         <p>
-          I'm a software engineer with a passion for crafting digital solutions.
-          I enjoy exploring the world through non-fiction books. I also love
-          stumbling upon captivating articles online, exploring a wide range of
-          topics to feed my curiosity.
+          I&apos;m a software engineer with a passion for crafting digital
+          solutions. I enjoy exploring the world through non-fiction books. I
+          also love stumbling upon captivating articles online, exploring a wide
+          range of topics to feed my curiosity.
         </p>
       </section>
     </div>
