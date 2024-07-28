@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/button";
+import { NavBar } from "@/components/nav_bar";
 import { Divider } from "@nextui-org/divider";
 import { Link } from "@nextui-org/link";
 import React from "react";
@@ -6,27 +6,6 @@ import React from "react";
 export default function Home() {
   return (
     <div className="bg-gray-50 p-4 h-screen">
-      <section>
-        <div className="flex items-center justify-between">
-          <Link
-            isBlock
-            href="/"
-            className="text-blue-950 lg:text-7xl md:text-6xl text-5xl font-bold mb-4 transition"
-          >
-            Vedant Mehra
-          </Link>
-          <Link isExternal href="https://www.linkedin.com/in/vmehra25/">
-            <Button
-              radius="full"
-              className="bg-red-500 text-white"
-              target="_blank"
-            >
-              Contact
-            </Button>
-          </Link>
-        </div>
-      </section>
-      <Divider></Divider>
       <section className="pt-4">
         <p className="text-center lg:text-5xl text-4xl text-orange-500 ">
           Intriguing Insights: From Text & The World

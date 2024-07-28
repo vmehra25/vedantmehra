@@ -2,6 +2,8 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
 import { siteConfig } from "@/config/site";
+import { NavBar } from "@/components/nav_bar";
+import { Divider } from "@nextui-org/react";
 
 export const metadata: Metadata = {
   title: {
@@ -40,7 +42,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body className="bg-gray-50">
+        <NavBar />
+        <Divider></Divider>
+        {children}
+      </body>
     </html>
   );
 }
