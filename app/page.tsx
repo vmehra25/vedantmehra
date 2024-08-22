@@ -12,6 +12,29 @@ export default function Home() {
         </p>
       </section>
       <section className="mt-16 lg:px-32 md:px-16 px-8">
+        <p className="text-3xl text-stone-500 mb-4">August 2024</p>
+        <Link
+          isBlock
+          showAnchorIcon
+          href="https://blackforestlabs.ai/"
+          color="foreground"
+          target="_blank"
+          className="text-cyan-600 mr-8"
+        >
+          Best Image AI I tried so far
+        </Link>
+        <Link
+          isBlock
+          showAnchorIcon
+          href="https://www.promptingguide.ai/"
+          color="foreground"
+          target="_blank"
+          className="text-red-600 mr-8"
+        >
+          Some Cool Prompting Techniques
+        </Link>
+      </section>
+      <section className="mt-16 lg:px-32 md:px-16 px-8">
         <p className="text-3xl text-stone-500 mb-4">July 2024</p>
         <Link
           isBlock
