@@ -1,20 +1,21 @@
 export default function AboutPage() {
   return (
-    <div className="bg-gray-50 p-4 h-screen">
-      <section className="pt-4">
-        <p className="text-center lg:text-5xl text-4xl text-orange-500 ">
-          About Me
-        </p>
-      </section>
-      <section className="mt-16 lg:px-32 md:px-16 px-8">
+    <main className="mx-auto max-w-3xl px-6 py-12">
+      <h1 className="text-3xl font-semibold text-[#12354e] dark:text-[#f1ece3]">About</h1>
+      <div className="mt-3 h-1 w-12 rounded bg-[#bb7125] dark:bg-[#eea78c]" />
+      <div className="mt-8 space-y-4 leading-relaxed text-[#12354e] dark:text-[#f1ece3]">
         <p>Hi, I&apos;m Vedant Mehra, this is a peek to my interests.</p>
         <p>
           I&apos;m a software engineer with a passion for crafting digital
-          solutions. I enjoy exploring the world through non-fiction books. I
-          also love stumbling upon captivating articles online, exploring a wide
-          range of topics to feed my curiosity.
+          solutions. I enjoy translating new ideas with code.
         </p>
-      </section>
-    </div>
+        <p>
+          Outside of work I explore the world through non-fiction books and love
+          stumbling upon captivating articles online, covering a wide range of
+          topics to feed my curiosity. This site is where I keep my reading and
+          notes.
+        </p>
+      </div>
+    </main>
   );
 }

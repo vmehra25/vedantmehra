@@ -1,32 +1,30 @@
-import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
+import { ThemeSwitch } from "@/components/theme-switch";
 
 export const NavBar = () => {
   return (
-    <section className="p-4">
-      <div className="flex items-center justify-between">
-        <Link
-          isBlock
-          href="/"
-          className="text-blue-950 lg:text-7xl md:text-6xl text-5xl font-bold mb-4 transition"
-        >
+    <header className="border-b border-[#c2ae93] dark:border-[#c2ae93]/30">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-5">
+        <Link href="/" className="text-xl font-semibold text-[#12354e] dark:text-[#f1ece3]">
           Vedant Mehra
         </Link>
-        <div className="h-full flex flex-col items-center justify-between">
-          <Link isExternal href="https://www.linkedin.com/in/vmehra25/">
-            <Button
-              radius="full"
-              className="bg-red-500 text-white mb-2"
-              target="_blank"
-            >
-              Contact
-            </Button>
+        <nav className="flex items-center gap-6 text-sm text-[#12354e] dark:text-[#f1ece3]">
+          <Link href="/" className="text-[#12354e] dark:text-[#f1ece3]">
+            Reading
           </Link>
-          <Link href="/about" className="mt-2">
-            <p>About me</p>
+          <Link href="/about" className="text-[#12354e] dark:text-[#f1ece3]">
+            About
           </Link>
-        </div>
+          <Link
+            isExternal
+            href="https://www.linkedin.com/in/vedantmehratech/"
+            className="text-[#12354e] dark:text-[#f1ece3]"
+          >
+            LinkedIn
+          </Link>
+          <ThemeSwitch />
+        </nav>
       </div>
-    </section>
+    </header>
   );
 };
