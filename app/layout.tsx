@@ -2,8 +2,8 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
 import { siteConfig } from "@/config/site";
+import { Providers } from "./providers";
 import { NavBar } from "@/components/nav_bar";
-import { Divider } from "@nextui-org/divider";
 
 export const metadata: Metadata = {
   title: {
@@ -42,10 +42,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-gray-50">
-        <NavBar />
-        <Divider></Divider>
-        {children}
+      <body className="min-h-screen bg-[#f8f4ee] dark:bg-[#0b1d2b] text-[#12354e] dark:text-[#f1ece3]">
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+          <NavBar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
